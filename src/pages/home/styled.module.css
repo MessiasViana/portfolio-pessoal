@@ -1,0 +1,57 @@
+:root {
+  --color-purple: #743DFA;
+  --color-white: #FFF;
+  --color-darkblue: #130633;
+}
+
+.entranceHall {
+  margin-top: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.superTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.superTitle h1 {
+  font-size: 3rem;
+  color: var(--color-darkblue);
+}
+
+.superTitle span {
+  margin-top: -1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: rgba(10, 10, 10, 0.9);
+}
+
+.hallIcons {
+  font-size: 40px;
+  color: var(--color-darkblue);
+}
+
+.hallIcons:hover {
+  color: var(--color-purple);
+  animation: rotate 5s ease infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+

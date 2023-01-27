@@ -1,0 +1,45 @@
+:root {
+  --color-purple: #743DFA;
+  --color-white: #FFF;
+  --color-darkblue: #130633;
+}
+
+.navbar {
+  height: 100px;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.container {
+  height: 100%;
+  max-width: 1200px;
+  margin:auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 70px;
+}
+
+.rightSide {
+  display: flex;
+  align-items: center;
+}
+
+
+.button {
+  padding: 10px;
+  border: 3px solid var(--color-purple);
+  color: var(--color-purple);
+  font-family: 'Work Sans', sans-serif;
+  transition: 0.5s;
+  font-size: 16px;
+}
+
+.button:hover {
+  cursor: pointer;
+  color: var(--color-white);
+  background-color: var(--color-purple);
+}
