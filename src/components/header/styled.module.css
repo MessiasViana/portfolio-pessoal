@@ -8,11 +8,19 @@
   height: 100px;
   width: 100%;
   padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
   height: 100%;
   max-width: 1200px;
+  width: 100%;
+}
+
+.headerArea {
+  width: 100%;
   margin:auto;
   display: flex;
   justify-content: space-between;
@@ -43,4 +51,24 @@
   cursor: pointer;
   color: var(--color-white);
   background-color: var(--color-purple);
+}
+
+@media (max-width: 1400px) {
+  .container {
+    max-width: 960px;
+    width: 100%;
+  }
+  .leftSide, .rightSide {
+    margin: 0 2rem;
+  }
+}
+
+@media (max-width:380px) {
+  .headerArea {
+    justify-content: center;
+  }
+
+  .rightSide {
+    display: none;
+  }
 }

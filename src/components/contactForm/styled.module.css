@@ -1,0 +1,76 @@
+:root {
+  --color-purple: #743DFA;
+  --color-white: #FFF;
+  --color-darkblue: #130633;
+  --color-dark: #000;
+  --color-gray: #333;
+}
+
+form {
+  width: 100%;
+  font-family: 'Work Sans', 'sans-serif';
+  margin-top: 3rem;
+  padding-left: 2rem;
+}
+
+.inputs {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+label {
+  font-weight: 400;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-gray);
+}
+
+.fild {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  width: 50%;
+}
+
+.input {
+  border: 1px solid #E6ECF8;
+  margin-right: 3rem;
+  padding: 1rem 0.5rem;
+  border-radius: 3px;
+  font-size: 1.2rem;
+}
+
+.textareaContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+textarea {
+  resize: none;
+  font-family: 'Work Sans', 'sans-serif';
+}
+
+textarea:focus, input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+@media (max-width: 768px) {
+  .inputs {
+    flex-direction: column;
+  }
+
+  .fild {
+    width: 100%;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width:380px) {
+  .fild {
+    width: 100%;
+  }
+}
+
+
