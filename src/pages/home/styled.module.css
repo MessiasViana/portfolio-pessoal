@@ -5,26 +5,26 @@
 }
 
 .entranceHall {
+  height: 80vh;
   margin-top: 3.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
-.superTitle {
+.entranceTitle {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.superTitle h1 {
+.entranceTitle h1 {
   font-size: 3rem;
   color: var(--color-darkblue);
 }
 
-.superTitle span {
+.entranceTitle span {
   margin-top: -1rem;
   text-align: center;
   font-size: 1.5rem;
@@ -38,7 +38,119 @@
 
 .hallIcons:hover {
   color: var(--color-purple);
-  animation: rotate 5s ease infinite;
+  animation: rotate 2s ease-in-out infinite;
+}
+
+.buttonProjectsArea {
+  margin-top: 3rem;
+}
+
+.buttonProjects {
+  padding: 0.8rem 5rem;
+  border: 3px solid var(--color-purple);
+  color: var(--color-purple);
+  font-family: 'Work Sans', sans-serif;
+  transition: 0.5s;
+  font-size: 1.3rem;
+  background-color: transparent;
+}
+
+.buttonProjects:hover {
+  cursor: pointer;
+  color: var(--color-white);
+  background-color: var(--color-purple);
+}
+
+.wheelArea {
+  position: absolute;
+  bottom: 4%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.wheel {
+  width: 25px;
+  height: 40px;
+  border: 3px solid var(--color-darkblue);
+  border-radius: 60px;
+}
+
+.wheel::before {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  top: 10px;
+  left: 50%;
+  opacity: 1;
+  background-color: var(--color-darkblue);
+  transform: translateX(-50%);
+  animation: wheel 1.2s infinite;
+}
+
+.about {
+  width: 100%;
+  background-color: var(--color-purple);
+  color: var(--color-white);
+  display: flex;
+  justify-content: center;
+}
+
+.aboutContainer {
+  padding: 5rem 0;
+  max-width: 1200px;
+  display: flex;
+}
+
+.presentation {
+  flex: 1;
+  margin-right: 7rem;
+}
+
+.presentation h2 {
+  line-height: 1.5;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.presentation p {
+  line-height: 1.5;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.habilitiesSide {
+  flex:1;
+}
+
+#linkFiap {
+  margin-left: 5px;
+  color: var(--color-white);
+}
+
+#linkFiap:hover {
+  color: var(--color-darkblue);
+}
+
+.projects {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5.5rem;
+}
+
+.projects .title{
+  font-size: 1.3rem;
+  color: var(--color-darkblue);
+}
+
+.cardsProjectArea {
+  width: 100%;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
 }
 
 @keyframes rotate {
@@ -50,6 +162,13 @@
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes wheel {
+  100% {
+    opacity: 0;
+    top: 30px;
   }
 }
 

@@ -12,7 +12,7 @@ export const Header = () => {
         </div>
 
         <div className={styles.rightSide}>
-          <div className={styles.button}>Fale comigo</div>
+          <button className={styles.button}>Fale comigo</button>
         </div>
       </div>
     </nav>

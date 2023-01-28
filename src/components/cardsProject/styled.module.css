@@ -1,0 +1,29 @@
+:root {
+  --color-purple: #743DFA;
+  --color-white: #FFF;
+  --color-darkblue: #130633;
+}
+
+.cardsContainer {
+  width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3.5rem;
+}
+
+.card {
+  height: 18rem;
+  background-color: #EEE;
+  border-radius: 0.3rem;
+}
+
+.cardImageArea {
+  padding: 9px;
+}
+
+.cardImageArea img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.3rem;
+}

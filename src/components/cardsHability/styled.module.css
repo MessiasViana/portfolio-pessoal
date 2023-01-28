@@ -1,0 +1,27 @@
+:root {
+  --color-purple: #743DFA;
+  --color-white: #FFF;
+  --color-darkblue: #130633;
+}
+
+.cardHabilityArea {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: var(--color-darkblue);
+  margin: 0 2rem 0 0;
+}
+
+.cardText {
+  padding: 0.6rem 1rem;
+  margin: 1rem 1rem 1rem 0;
+  background-color: var(--color-darkblue);
+  transition: 0.5s;
+}
+
+.cardText:hover {
+  background-color: var(--color-white);
+  color: var(--color-darkblue);
+}
