@@ -9,9 +9,16 @@
   width: 100%;
 }
 
+.title {
+  text-align: center;
+}
+
 .entranceHall {
   height: 80vh;
   margin-top: 3.5rem;
+}
+
+.hallArea {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -59,6 +66,7 @@
   transition: 0.5s;
   font-size: 1.3rem;
   background-color: transparent;
+  text-decoration: none;
 }
 
 .buttonProjects:hover {
@@ -233,12 +241,13 @@
   font-size: 1.5rem;
   margin-right: 1.5rem;
   padding: 10px;
-  border: 1px solid #5BE9B9;
+  border: 1px solid #3CB9FC;
   border-radius: 50%;
+  transition: 0.5s;
 }
 
 .iconsSocial:hover {
-  background-color: #5BE9B9;
+  background-color: #3CB9FC;
   color: var(--color-darkblue);
 }
 
@@ -285,17 +294,23 @@
 }
 
 @media (max-width: 1060px) {
-
   .box {
     flex-direction: column;
     align-items: center;
     width: 90%;
     margin: -5rem auto;
   }
+
+  .letsWork {
+    padding-top: 2rem;
+  }
+
+  .iconsMediaArea {
+    padding-top: 0rem;
+  }
 }
 
 @media (max-width: 500px) {
-
   .box {
     text-align: center;
   }

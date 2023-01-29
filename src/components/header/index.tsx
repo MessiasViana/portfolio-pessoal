@@ -9,11 +9,15 @@ export const Header = () => {
       <div className={styles.container}>
         <div className={styles.headerArea}>
           <div className={styles.leftSide}>
-            <img className={styles.logo} src={logo} alt="Messias"></img>
+            <img
+              className={styles.logo}
+              src={logo}
+              alt="Messias"
+            />
           </div>
 
           <div className={styles.rightSide}>
-            <button className={styles.button}>Fale comigo</button>
+            <a className={styles.button} href="#contact">Fale comigo</a>
           </div>
         </div>
       </div>

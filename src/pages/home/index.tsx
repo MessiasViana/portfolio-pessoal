@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react';
 import styles from './styled.module.css';
+import { useEffect, useState } from 'react';
 
 import { Header } from '../../components/header';
 import { CardHability } from '../../components/cardsHability';
@@ -8,7 +8,13 @@ import { ContactForm } from '../../components/contactForm';
 import { Footer } from '../../components/footer';
   
 import { GrCode } from 'react-icons/gr';
-import { AiOutlineInstagram, AiFillLinkedin, AiFillGithub, AiOutlineMail, AiOutlineWhatsApp } from 'react-icons/ai';
+import {
+  AiOutlineInstagram,
+  AiFillLinkedin,
+  AiFillGithub,
+  AiOutlineMail,
+  AiOutlineWhatsApp
+} from 'react-icons/ai';
 
 
 const Page = () => {
@@ -16,11 +22,6 @@ const Page = () => {
 
   const date = new Date();
   const year = date.getFullYear();
-
-  
-  const toProjects = () => {
-    window.location.href = '/projects';
-  }
 
   useEffect(() => {
     setTime(year - 2019);
@@ -31,14 +32,16 @@ const Page = () => {
       <Header />
 
       <section className={styles.entranceHall}>
-        <div className={styles.entranceTitle}>
-          <GrCode className={styles.hallIcons}/>
-          <h1>Desenvolvedor Frontend e Backend</h1>
-          <span>Estou aqui para resolucionar seus problemas com tecnologia</span>
-        </div>
+        <div className={styles.hallArea}>
+          <div className={styles.entranceTitle}>
+            <GrCode className={styles.hallIcons}/>
+            <h1>Desenvolvedor Frontend e Backend</h1>
+            <span>Estou aqui para resolucionar seus problemas com tecnologia</span>
+          </div>
 
-        <div className={styles.buttonProjectsArea}>
-          <button className={styles.buttonProjects} onClick={toProjects}>Projetos</button>
+          <div className={styles.buttonProjectsArea}>
+            <a className={styles.buttonProjects} href="#projects">Projetos</a>
+          </div>
         </div>
 
         <div className={styles.wheelArea}>
@@ -79,16 +82,16 @@ const Page = () => {
         </div>
       </section>
 
-      <section className={styles.projects}>
+      <section className={styles.projects} id="projects">
         <div className={styles.cardsProjectArea}>
-          <h1 className={styles.title}>Projetos</h1>
+          <h1 className={styles.title}>Projetos em que participei</h1>
           <CardsProject />
         </div>
       </section>
 
-      <section className={styles.contact}>
+      <section className={styles.contact} id="contact">
         <div className={styles.title}>
-          <h1>Contato</h1>
+          <h1>Me mande uma mensagem!</h1>
         </div>
 
         <div className={styles.container}>
@@ -106,15 +109,35 @@ const Page = () => {
             </div>
 
             <div className={styles.iconsMediaArea}>
-              <a href="#"><AiOutlineInstagram className={styles.iconsSocial} /></a>
+              <a
+                href="https://www.instagram.com/messias.o.v/?next=%2F"
+                target="_blank"
+                rel="noreferrer"
+              ><AiOutlineInstagram className={styles.iconsSocial} /></a>
 
-              <a href="#"><AiFillLinkedin className={styles.iconsSocial} /></a>
+              <a
+                href="https://www.linkedin.com/in/messias-viana-14a87b209/" 
+                target="_blank" 
+                rel="noreferrer"
+              ><AiFillLinkedin className={styles.iconsSocial} /></a>
 
-              <a href="#"><AiFillGithub className={styles.iconsSocial} /></a>
+              <a
+                href="https://github.com/MessiasViana" 
+                target="_blank" 
+                rel="noreferrer"
+              ><AiFillGithub className={styles.iconsSocial} /></a>
 
-              <a href="#"><AiOutlineMail className={styles.iconsSocial} /></a>
+              <a
+                href="mailto:messiasdeviana@gmail.com" 
+                target="_blank" 
+                rel="noreferrer"
+              ><AiOutlineMail className={styles.iconsSocial} /></a>
 
-              <a href="#"><AiOutlineWhatsApp className={styles.iconsSocial} /></a>
+              <a
+                href="https://api.whatsapp.com/send?phone=5511955903306" 
+                target="_blank" 
+                rel="noreferrer"
+              ><AiOutlineWhatsApp className={styles.iconsSocial} /></a>
             </div>
           </div>
         </div>
