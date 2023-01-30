@@ -17,12 +17,9 @@
   font-weight: 400;
 }
 
-.lastProjects {
+.projectsArea {
   display: flex;
   width: 100%;
-  /* display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 3.5rem; */
 }
 
 .card {
@@ -32,11 +29,13 @@
   text-decoration: none;
   color: var(--color-dark);
   margin: 0 1.2rem;
-  padding-bottom: 1.3rem;
+  padding-bottom: 2rem;
 }
 
 .cardImageArea {
   padding: 9px;
+  max-height: 70%;
+  height: 100%;
 }
 
 .cardImageArea img {
@@ -165,7 +164,7 @@
     margin: 3rem 0 2rem 0;
     text-align: center;
   }
-  .lastProjects {
+  .projectsArea {
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -177,7 +176,7 @@
 }
 
 @media (max-width: 600px) {
-  .lastProjects {
+  .projectsArea {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;

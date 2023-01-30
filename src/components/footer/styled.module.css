@@ -14,6 +14,15 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 5rem;
+}
+
+.logoArea {
+  height: 70px;
+}
+
+.logo {
+  height: 100%;
 }
 
 .copyright {

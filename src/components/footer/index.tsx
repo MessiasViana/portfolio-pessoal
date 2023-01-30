@@ -1,13 +1,18 @@
 import styles from './styled.module.css';
 
+import logo from '../../images/logo/logo-branca.png';
+
 import { AiOutlineCopyrightCircle } from 'react-icons/ai';
 
 export const Footer = () => {
 
   return (
     <footer>
-      <div className={styles.logo}>
-        <img src='' alt="Messias"/>
+      <div className={styles.logoArea}>
+        <img
+          src={logo}
+          className={styles.logo}
+          alt="Messias" />
       </div>
 
       <div className={styles.copyright}>

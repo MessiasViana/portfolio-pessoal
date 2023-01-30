@@ -18,6 +18,7 @@ import {
 
 
 const Page = () => {
+  // variables and function to calculate since the year I started programming
   const [time, setTime] = useState<number>();
 
   const date = new Date();
