@@ -16,7 +16,7 @@ export const Footer = () => {
       </div>
 
       <div className={styles.copyright}>
-        <h1>messiasdeviana@gmail.com</h1>
+        <h1>contato@messiasdev.com.br</h1>
         <h1>Feito por mim <AiOutlineCopyrightCircle id={styles.rightIcon} /></h1>
       </div>
     </footer>

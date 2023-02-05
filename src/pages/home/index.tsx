@@ -32,34 +32,38 @@ const Page = () => {
     <>
       <Header />
 
-      <section className={styles.entranceHall}>
+      <main className={styles.entranceHall}>
         <div className={styles.hallArea}>
-          <div className={styles.entranceTitle}>
-            <GrCode className={styles.hallIcons}/>
-            <h1>Desenvolvedor Frontend e Backend</h1>
-            <span>Estou aqui para resolucionar seus problemas com tecnologia</span>
-          </div>
+          <GrCode className={styles.hallIcons}/>
+          <h1>Desenvolvedor Frontend e Backend</h1>
+          <span>Estou aqui para resolucionar seus problemas com tecnologia</span>
 
           <div className={styles.buttonProjectsArea}>
             <a className={styles.buttonProjects} href="#projects">Projetos</a>
           </div>
+          
+          <div className={styles.wheelArea}>
+            <div className={styles.wheel}></div>
+          </div>
         </div>
-
-        <div className={styles.wheelArea}>
-          <div className={styles.wheel}></div>
-        </div>
-      </section>
+      </main>
 
       <section className={styles.about}>
         <div className={styles.container}>
           <div className={styles.aboutContainer}>
             <div className={styles.presentation}>
-              <h2>Olá, eu sou Messias. Prazer em te conhecer</h2>
+              <h2>Olá, eu sou Messias. Prazer em te conhecer!</h2>
 
               <p>
                 Sou desenvelvedor <strong>Frontend e Backend</strong>, comecei com programação faz {time} anos.
                 Tenho paixão e confio em meu trabalho, sempre procurando melhorar minhas habilidades
                 e inovar em meus projetos.
+              </p>
+
+              <p>
+                Ofereço serviços de construção de sites, desde os mais simples até os mais complexos,
+                incluindo lojas virtuais e-commerce. Independentemente do tamanho ou da complexidade do projeto,
+                garanto que todos os sites sejam criados com a mesma atenção aos detalhes e qualidade de construção.
               </p>
 
               <p>
@@ -85,14 +89,14 @@ const Page = () => {
 
       <section className={styles.projects} id="projects">
         <div className={styles.cardsProjectArea}>
-          <h1 className={styles.title}>Projetos em que participei</h1>
+          <h2 className={styles.title}>Projetos em que participei</h2>
           <CardsProject />
         </div>
       </section>
 
       <section className={styles.contact} id="contact">
         <div className={styles.title}>
-          <h1>Me mande uma mensagem!</h1>
+          <h2>Me mande uma mensagem!</h2>
         </div>
 
         <div className={styles.container}>
@@ -106,7 +110,7 @@ const Page = () => {
         <div className={styles.container}>
           <div className={styles.box}>
             <div className={styles.letsWork}>
-              <h1>Vamos trabalhar juntos!</h1>
+              <h2>Vamos trabalhar juntos!</h2>
             </div>
 
             <div className={styles.iconsMediaArea}>
@@ -129,7 +133,7 @@ const Page = () => {
               ><AiFillGithub className={styles.iconsSocial} /></a>
 
               <a
-                href="mailto:messiasdeviana@gmail.com" 
+                href="mailto:contato@messiasdev.com.br" 
                 target="_blank" 
                 rel="noreferrer"
               ><AiOutlineMail className={styles.iconsSocial} /></a>

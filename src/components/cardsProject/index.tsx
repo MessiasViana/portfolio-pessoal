@@ -4,9 +4,9 @@ import lastProjectImage1 from '../../images/projects/last/muuvi.png';
 import lastProjectImage2 from '../../images/projects/last/jandtaxi.png';
 import lastProjectImage3 from '../../images/projects/last/JVservicos.png';
 
-import personalProjectImage1 from '../../images/projects/personal/pokeAPI.png';
-import personalProjectImage2 from '../../images/projects/personal/petDevShop.png';
-import personalProjectImage3 from '../../images/projects/personal/jogoVelha.png';
+// import personalProjectImage1 from '../../images/projects/personal/pokeAPI.png';
+// import personalProjectImage2 from '../../images/projects/personal/petDevShop.png';
+// import personalProjectImage3 from '../../images/projects/personal/jogoVelha.png';
 
 
 
@@ -23,11 +23,11 @@ export const CardsProject = () => {
   ] = ["Muuvi", "JandTaxi", "Jv serviços"]
   
   //titles for personal projects
-  const[
-    personalProjectTitle1,
-    personalProjectTitle2,
-    personalProjectTitle3
-  ] = ["PokeAPI", "PetDevShop", "Jogo da velha"]
+  // const[
+  //   personalProjectTitle1,
+  //   personalProjectTitle2,
+  //   personalProjectTitle3
+  // ] = ["PokeAPI", "PetDevShop", "Jogo da velha"]
 
   return (
     <div className={styles.container}>
@@ -111,14 +111,14 @@ export const CardsProject = () => {
       </div>
 
       {/* Personal projects */}
-      <div className={styles.subTitle}>
+      {/* <div className={styles.subTitle}>
           <h2>Pessoais</h2>
       </div>
 
       <div className={styles.projectsArea}>
         <a
           className={styles.card}
-          href="#"
+          href="https://messiasdev.com.br/projeto1"
           target="_blank"
           rel='noreferrer'
         >
@@ -142,7 +142,7 @@ export const CardsProject = () => {
       
         <a
           className={styles.card}
-          href="#"
+          href="https://messiasdev.com.br/projeto2"
           target="_blank"
           rel='noreferrer'
         >
@@ -166,7 +166,7 @@ export const CardsProject = () => {
 
         <a
           className={styles.card}
-          href="#"
+          href="https://messiasdev.com.br/projeto3"
           target="_blank"
           rel='noreferrer'
         >
@@ -187,35 +187,6 @@ export const CardsProject = () => {
             </div>
           </div>
         </a>
-      </div>
-        
-      
-
-
-
-      {/* <div className={styles.card}>
-        <div className={styles.comingCard}>
-          <div className={styles.comingContent}>
-            <TfiLock className={styles.iconLock} />
-            <h3>Em breve</h3>
-          </div>
-        </div>
-      </div>
-      <div className={styles.card}>
-        <div className={styles.comingCard}>
-          <div className={styles.comingContent}>
-            <TfiLock className={styles.iconLock} />
-            <h3>Em breve</h3>
-          </div>
-        </div>
-      </div>
-      <div className={styles.card}>
-        <div className={styles.comingCard}>
-          <div className={styles.comingContent}>
-            <TfiLock className={styles.iconLock} />
-            <h3>Em breve</h3>
-          </div>
-        </div>
       </div> */}
     </div>
   );

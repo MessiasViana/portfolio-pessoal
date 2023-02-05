@@ -10,7 +10,13 @@ form {
   width: 100%;
   font-family: 'Work Sans', 'sans-serif';
   margin-top: 3rem;
-  padding-left: 2rem;
+}
+
+.formArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .inputs {
@@ -34,10 +40,13 @@ label {
 
 .input {
   border: 1px solid #E6ECF8;
-  margin-right: 3rem;
   padding: 1rem 0.5rem;
   border-radius: 3px;
   font-size: 1.2rem;
+}
+
+#nameInput {
+  margin-right: 1rem;
 }
 
 .textareaContainer {
@@ -56,6 +65,30 @@ textarea:focus, input:focus {
   outline: 0;
 }
 
+.submitArea {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.submit {
+  padding: 0.8rem 5rem;
+  border: 3px solid var(--color-purple);
+  color: var(--color-purple);
+  font-family: 'Work Sans', sans-serif;
+  transition: 0.5s;
+  font-size: 1.3rem;
+  background-color: transparent;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.submit:hover {
+  cursor: pointer;
+  color: var(--color-white);
+  background-color: var(--color-purple);
+}
+
 @media (max-width: 768px) {
   .inputs {
     flex-direction: column;
@@ -66,14 +99,18 @@ textarea:focus, input:focus {
     margin-top: 1rem;
   }
 
-  .input {
-    margin-right: 2rem;
+  #nameInput {
+    margin-right: 0;
   }
 }
 
 @media (max-width:380px) {
   .fild {
     width: 100%;
+  }
+
+  .submitArea {
+    justify-content: left;
   }
 }
 
