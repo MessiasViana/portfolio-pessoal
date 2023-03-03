@@ -61,8 +61,8 @@ const Page = () => {
               </p>
 
               <p>
-                Ofereço serviços de construção de sites, desde os mais simples até os mais complexos,
-                incluindo lojas virtuais e-commerce. Independentemente do tamanho ou da complexidade do projeto,
+                Ofereço serviços de construção de sites, desde os mais simples até os mais complexos.
+                Independentemente do tamanho ou da complexidade do projeto,
                 garanto que todos os sites sejam criados com a mesma atenção aos detalhes e qualidade de construção.
               </p>
 
