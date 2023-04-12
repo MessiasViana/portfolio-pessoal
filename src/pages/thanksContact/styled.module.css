@@ -1,13 +1,4 @@
-:root {
-  --color-purple: #743DFA;
-  --color-white: #FFF;
-  --color-darkblue: #130633;
-}
-
-.container {
-  max-width: 1200px;
-  width: 100%;
-}
+@import url('../../components/styles/styles.global.module.css');
 
 .thanksContact {
   width: 100%;
@@ -34,45 +25,16 @@
   height: 100%;
 }
 
-.title {
+.backArea {
   text-align: center;
 }
 
-.title h1 {
-  font-size: 3rem;
-  color: var(--color-darkblue);
-  margin-bottom: 1.5rem;
-}
-
-.title span {
+.coffe {
   font-size: 1.5rem;
+  padding-top: 1em;
   color: rgba(10, 10, 10, 0.9);
 }
 
 .buttonArea {
   margin-top: 3rem;
-}
-
-.button {
-  padding: 0.8rem 5rem;
-  border: 3px solid var(--color-purple);
-  color: var(--color-purple);
-  font-family: 'Work Sans', sans-serif;
-  transition: 0.5s;
-  font-size: 1.3rem;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-.button:hover {
-  cursor: pointer;
-  color: var(--color-white);
-  background-color: var(--color-purple);
-}
-
-@media (max-width: 1400px) {
-  .container {
-    max-width: 960px;
-    width: 100%;
-  }
 }

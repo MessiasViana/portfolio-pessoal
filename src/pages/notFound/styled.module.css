@@ -1,28 +1,10 @@
-:root {
-  --color-purple: #743DFA;
-  --color-white: #FFF;
-  --color-darkblue: #130633;
-}
+@import url('../../components/styles/styles.global.module.css');
 
-.container {
-  width: 100%;
-}
 
-.thanksContact {
+.notFound {
   width: 100%;
-  height: 100vh;
   display: flex;
   justify-content: center;
-}
-
-.thanksArea {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: -7rem;
 }
 
 .logoArea {
@@ -43,16 +25,6 @@
   margin: 6rem 0;
 }
 
-.backArea h1, .backArea p {
-  text-align: center;
-}
-
-.backArea h1 {
-  font-size: 3rem;
-  color: var(--color-darkblue);
-  margin-bottom: 1.5rem;
-}
-
 .backArea p {
   font-size: 1.5rem;
   color: rgba(10, 10, 10, 0.9);
@@ -67,41 +39,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-right: 4rem;
+  text-align: center;
 }
 
-.buttonArea {
-  margin-top: 3rem;
-}
-
-.button {
-  padding: 0.8rem 5rem;
-  border: 3px solid var(--color-purple);
-  color: var(--color-purple);
-  font-family: 'Work Sans', sans-serif;
-  transition: 0.5s;
-  font-size: 1.3rem;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-.button:hover {
-  cursor: pointer;
-  color: var(--color-white);
-  background-color: var(--color-purple);
-}
-
-@media (max-width: 1010px) {
+@media (max-width: 1060px) {
   .backArea {
     flex-direction: column;
     margin-top: 5rem;
   }
 
   .minionArea img{
-    height: 20rem;
+    display: none;
   }
 
   .warnArea {
     padding: 0 1.5rem;
+    margin-bottom: 3rem;
   }
 }

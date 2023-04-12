@@ -1,17 +1,4 @@
-:root {
-  --color-purple: #743DFA;
-  --color-white: #FFF;
-  --color-darkblue: #130633;
-}
-
-.container {
-  max-width: 1200px;
-  width: 100%;
-}
-
-.title {
-  text-align: center;
-}
+@import url('../../components/styles/styles.global.module.css');
 
 .entranceHall {
   margin-top: 3.5rem;
@@ -66,23 +53,6 @@
   margin-top: 3rem;
 }
 
-.buttonProjects {
-  padding: 0.8rem 5rem;
-  border: 3px solid var(--color-purple);
-  color: var(--color-purple);
-  font-family: 'Work Sans', sans-serif;
-  transition: 0.5s;
-  font-size: 1.3rem;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-.buttonProjects:hover {
-  cursor: pointer;
-  color: var(--color-white);
-  background-color: var(--color-purple);
-}
-
 .wheelArea {
   position: absolute;
   bottom: 4%;
@@ -130,10 +100,8 @@
   margin-right: 7rem;
 }
 
-.presentation h2 {
-  line-height: 1.5;
+.title {
   font-size: 1.5rem;
-  font-weight: 600;
 }
 
 .presentation p {
@@ -163,17 +131,11 @@
 
 .cardsProjectArea {
   width: 100%;
-  margin-top: 3rem;
+  margin-top: 6rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-}
-
-.cardsProjectArea .title {
-  margin-top: 7rem;
-  font-size: 2rem;
-  font-weight: 600;
 }
 
 .contact {
@@ -182,18 +144,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-.contact .title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.contact .title h2 {
-  font-size: 2rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
 }
 
 .formContainer {
@@ -275,10 +225,7 @@
 }
 
 @media (max-width: 1400px) {
-  .container {
-    max-width: 960px;
-    width: 100%;
-  }
+
   .aboutContainer {
     flex-direction: column;
   }

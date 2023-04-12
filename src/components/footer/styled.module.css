@@ -1,8 +1,4 @@
-:root {
-  --color-purple: #743DFA;
-  --color-white: #FFF;
-  --color-darkblue: #130633;
-}
+@import url('../styles/styles.global.module.css');
 
 footer {
   width: 100%;

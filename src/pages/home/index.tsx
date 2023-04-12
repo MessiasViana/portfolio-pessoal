@@ -1,4 +1,6 @@
 import styles from './styled.module.css';
+import stylesGlobal from '../../components/styles/styles.global.module.css';
+
 import { useEffect, useState } from 'react';
 
 import { Header } from '../../components/header';
@@ -39,7 +41,7 @@ const Page = () => {
           <span>Estou aqui para resolucionar seus problemas com tecnologia</span>
 
           <div className={styles.buttonProjectsArea}>
-            <a className={styles.buttonProjects} href="#projects">Projetos</a>
+            <a className={stylesGlobal.button} href="#projects">Projetos</a>
           </div>
           
           <div className={styles.wheelArea}>
@@ -49,10 +51,10 @@ const Page = () => {
       </main>
 
       <section className={styles.about}>
-        <div className={styles.container}>
+        <div className={stylesGlobal.container}>
           <div className={styles.aboutContainer}>
             <div className={styles.presentation}>
-              <h2>Olá, eu sou Messias. Prazer em te conhecer!</h2>
+              <h2 className={`${styles.title}`}>Olá, eu sou Messias. Prazer em te conhecer!</h2>
 
               <p>
                 Sou desenvelvedor <strong>Frontend e Backend</strong>, comecei com programação faz {time} anos.
@@ -89,17 +91,17 @@ const Page = () => {
 
       <section className={styles.projects} id="projects">
         <div className={styles.cardsProjectArea}>
-          <h2 className={styles.title}>Projetos em que participei</h2>
+          <h2 className={stylesGlobal.title}>Projetos em que participei</h2>
           <CardsProject />
         </div>
       </section>
 
       <section className={styles.contact} id="contact">
-        <div className={styles.title}>
-          <h2>Me mande uma mensagem!</h2>
+        <div >
+          <h2 className={stylesGlobal.title}>Me mande uma mensagem!</h2>
         </div>
 
-        <div className={styles.container}>
+        <div className={stylesGlobal.container}>
           <div className={styles.formContainer}>
             <ContactForm />
             </div>
@@ -107,7 +109,7 @@ const Page = () => {
       </section>
 
       <section className={styles.socialMedias}>
-        <div className={styles.container}>
+        <div className={stylesGlobal.container}>
           <div className={styles.box}>
             <div className={styles.letsWork}>
               <h2>Vamos trabalhar juntos!</h2>

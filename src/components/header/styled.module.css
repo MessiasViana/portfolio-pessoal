@@ -1,8 +1,4 @@
-:root {
-  --color-purple: #743DFA;
-  --color-white: #FFF;
-  --color-darkblue: #130633;
-}
+@import url('../styles/styles.global.module.css');
 
 .navbar {
   height: 100px;
@@ -43,26 +39,10 @@
 
 .button {
   padding: 10px;
-  border: 3px solid var(--color-purple);
-  color: var(--color-purple);
-  font-family: 'Work Sans', sans-serif;
-  transition: 0.5s;
   font-size: 16px;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-.button:hover {
-  cursor: pointer;
-  color: var(--color-white);
-  background-color: var(--color-purple);
 }
 
 @media (max-width: 1400px) {
-  .container {
-    max-width: 960px;
-    width: 100%;
-  }
   .leftSide, .rightSide {
     margin: 0 2rem;
   }

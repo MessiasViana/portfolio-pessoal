@@ -1,10 +1,4 @@
-:root {
-  --color-purple: #743DFA;
-  --color-white: #FFF;
-  --color-darkblue: #130633;
-  --color-dark: #000;
-  --color-gray: #333;
-}
+@import url('../styles/styles.global.module.css');
 
 .container {
   width: 1200px;

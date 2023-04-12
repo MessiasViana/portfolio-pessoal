@@ -1,4 +1,5 @@
 import styles from './styled.module.css';
+import stylesGlobal from './../styles/styles.global.module.css';
 
 import logo from '../../images/logo/logo.png';
 
@@ -17,7 +18,7 @@ export const Header = () => {
           </div>
 
           <div className={styles.rightSide}>
-            <a className={styles.button} href="#contact">Fale comigo</a>
+            <a className={`${stylesGlobal.button} ${styles.button}`} href="#contact">Fale comigo</a>
           </div>
         </div>
       </div>

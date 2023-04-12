@@ -1,4 +1,5 @@
 import styles from './styled.module.css';
+import stylesGlobal from './../styles/styles.global.module.css';
 
 export const ContactForm = () => {
   return (
@@ -53,7 +54,7 @@ export const ContactForm = () => {
         </div>
       
         <div className={styles.submitArea}>
-          <button type="submit" className={styles.submit}>Enviar</button>
+          <button type="submit" className={stylesGlobal.button}>Enviar</button>
         </div>
       </form>
     </div>
