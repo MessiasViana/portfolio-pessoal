@@ -9,20 +9,22 @@
   color: var(--color-darkblue);
   margin: 3rem 0 2rem 1.3rem;
   font-weight: 400;
+  text-align: center;
 }
 
 .projectsArea {
   display: flex;
   width: 100%;
+  flex-wrap: wrap;
 }
 
 .card {
-  width: 33.33%;
+  width: 30%;
   background-color: #fafafa;
   border-radius: 0.3rem;
   text-decoration: none;
   color: var(--color-dark);
-  margin: 0 1.2rem;
+  margin: 1.2rem;
   padding-bottom: 2rem;
 }
 
@@ -118,6 +120,12 @@
   .container {
     max-width: 960px;
     width: 100%;
+  }
+  .projectsArea {
+    justify-content: center;
+  }
+  .card {
+    width: 40%;
   }
 }
 
