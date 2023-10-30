@@ -47,7 +47,7 @@
 
 .hallIcons:hover {
   color: var(--color-purple);
-  animation: rotate 2s ease-in-out infinite;
+  animation: rotate 2s linear infinite;
 }
 
 .buttonProjectsArea {
@@ -207,13 +207,7 @@
 
 
 @keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(180deg);
-  }
-  100% {
+  to {
     transform: rotate(360deg);
   }
 }

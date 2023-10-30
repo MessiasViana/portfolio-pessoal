@@ -1,0 +1,12 @@
+services:
+  portfolio:
+    image: messiasviana/portfolio:1.0
+    container_name: portfolio
+    networks:
+      - portfolio_rede
+    ports:
+      - 3000:3000
+
+networks:
+  portfolio_rede:
+    driver: bridge
